@@ -40,5 +40,11 @@ public class StringExamples {
         str1.append(" is too awesome!");
         System.out.println(str1);
 
+        //Conversion of StringBuffer object to String
+        System.out.println("Conversion of StringBuffer object to String");
+        String stringObject = str1.toString();
+        System.out.println(stringObject);
+
+
     }
 }
