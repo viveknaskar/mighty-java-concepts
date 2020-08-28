@@ -1,4 +1,4 @@
-# mighty-java-concepts
+# Mighty Java Concepts
 A series of java programs intended for coding practices, concepts understanding and more.
 
 ## Following topics have been covered:
