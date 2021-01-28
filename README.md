@@ -1,7 +1,7 @@
 # Mighty Java Concepts
-A series of java programs intended for coding practices, concepts understanding and more.
+A series of java programs intended for coding practices, concepts understanding and many more examples....
 
-## Following topics have been covered:
+## Some of them covered are:
 
 #### ComparatorExample
 #### DateAndTime
