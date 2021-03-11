@@ -9,7 +9,8 @@ public class DecoratorExample {
          * Creating new Margherita pizza
          */
         Pizza margheritaPizza = new Margherita();
-        System.out.println(margheritaPizza.getDescription() + " Cost :$" + margheritaPizza.getCost());
+        System.out.println(margheritaPizza.getDescription()
+                + " Cost :$" + margheritaPizza.getCost());
 
         /**
          * Creating new FarmHouse pizza
@@ -20,10 +21,12 @@ public class DecoratorExample {
          * Decorating with FreshTomato topping
          */
         farmhousePizza = new FreshTomato(farmhousePizza);
-        System.out.println(farmhousePizza.getDescription() + " Cost :$" + farmhousePizza.getCost());
+        System.out.println(farmhousePizza.getDescription()
+                + " Cost :$" + farmhousePizza.getCost());
 
         Pizza cheeseburstPizza = new CheeseBurst(margheritaPizza);
-        System.out.println(cheeseburstPizza.getDescription() + " Cost :$" + cheeseburstPizza.getCost());
+        System.out.println(cheeseburstPizza.getDescription()
+                + " Cost :$" + cheeseburstPizza.getCost());
 
     }
 }
