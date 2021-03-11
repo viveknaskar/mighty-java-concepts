@@ -9,7 +9,7 @@ class DateAndTime {
         String month = in.next();
         String day = in.next();
         String year = in.next();
-        LocalDate localDate = LocalDate.of(Integer.parseInt(year),Integer.parseInt(month), Integer.parseInt(day));
+        LocalDate localDate = LocalDate.of(Integer.parseInt(year), Integer.parseInt(month), Integer.parseInt(day));
         DayOfWeek dayOfWeek = localDate.getDayOfWeek();
         System.out.println(dayOfWeek);
     }

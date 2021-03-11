@@ -14,11 +14,10 @@ public class SingletonClassExample {
     }
 
     public static SingletonClassExample getInstance() {
-
         if (single_instance == null)
             single_instance = new SingletonClassExample();
-            return single_instance;
-        }
+        return single_instance;
+    }
 
     public static void main(String[] args) {
 

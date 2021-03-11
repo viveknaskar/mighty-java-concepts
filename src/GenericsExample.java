@@ -1,7 +1,8 @@
 /*
 * A simple program to demonstrate user-defined generics
 *
-*  Generics allow type (Integer, String, … etc and user defined types) to be a parameter to methods, classes and interfaces.
+*  Generics allow type (Integer, String, … etc and user defined types) to be
+*  a parameter to methods, classes and interfaces.
 * */
 public class GenericsExample {
 
