@@ -29,7 +29,7 @@ public class SingletonReflectionExample {
         SingletonReflectionExample objectOne = SingletonReflectionExample.getInstance();
 
         /**
-         * Creating a secondary instance using Reflection API
+         * Creating a second instance using Reflection API
          */
         SingletonReflectionExample objectTwo = null;
         try {
