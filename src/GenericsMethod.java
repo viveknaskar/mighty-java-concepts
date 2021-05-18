@@ -1,6 +1,6 @@
-/*
-* An illustration of user defined generics method
-* */
+/**
+ *  An illustration of user defined generics method
+ */
 public class GenericsMethod {
 
     // Created a generic method of type T

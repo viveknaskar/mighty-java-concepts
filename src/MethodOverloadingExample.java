@@ -1,7 +1,6 @@
 public class MethodOverloadingExample {
     /**
      * Method Overloading is basically same method name but with different method signature
-     * @param args
      */
 
     public static void main(String[] args) {

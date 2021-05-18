@@ -1,5 +1,6 @@
-// Java program to Reverse a String by converting string to characters one by one
-
+/**
+ * Java program to Reverse a String by converting string to characters one by one
+ */
 public class ReverseString {
 
     public static void main(String[] args) {
