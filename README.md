@@ -16,3 +16,4 @@ A series of java programs intended for coding practices, concepts understanding 
 #### StringComparison
 #### StringExamples
 #### TryCatchFinallyExample
+#### SingletonPattern & the ways to break it
