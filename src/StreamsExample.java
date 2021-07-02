@@ -1,8 +1,5 @@
 import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -111,6 +108,23 @@ public class StreamsExample {
             .map(String::toUpperCase)
             .filter(x -> x.startsWith("S"))
             .forEach(System.out::println);
+
+        /**
+         * Example 8: Reduction and Sum
+         */
+        double total = Stream.of(7.3, 6.4, 34.6)
+                .reduce(0.0, (Double a, Double b) -> a + b);
+        System.out.println(total);
+
+
+        /**
+         * Example 9: Reduction and Sum
+         */
+        IntSummaryStatistics summary = IntStream.of(12, 4, 46, 8, 10, 76, 34)
+                .summaryStatistics();
+        System.out.println(summary);
+        // Output is: IntSummaryStatistics{count=7, sum=190, min=4, average=27.142857, max=76}
+
 
     }
 }
