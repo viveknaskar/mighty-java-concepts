@@ -1,7 +1,10 @@
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class StreamsExample {
     /**
@@ -40,6 +43,74 @@ public class StreamsExample {
 
         long countUsingStreams = list.stream().filter(num -> num.length() > 5).count();
         System.out.println("Count Using Streams: " + countUsingStreams);
+
+        /**
+         * ********************* MORE STREAM EXAMPLES ************************
+         */
+
+        /**
+         * Example 1: This would print 1-9 in the console
+         */
+        IntStream
+                .range(1, 10) // .range(inclusiveNum, exclusiveNum)
+                .forEach(System.out::print);
+        System.out.println();
+
+        /**
+         * Example 2: IntStream with skip
+         */
+        IntStream
+                .range(1, 10)
+                .skip(5)
+                .forEach(x -> System.out.print(x));
+        System.out.println();
+
+        /**
+         * Example 3: IntStream with sum()
+         */
+        int sumOfNumbers =
+                    IntStream
+                            .range(1, 5)
+                            .sum();
+        System.out.println(sumOfNumbers);
+
+        /**
+         * Example 4: Stream.of with sorted() and findFirst()
+         */
+        Stream.of("Vivek", "Abi", "Anoop", "Arun")
+                .sorted()
+                .findFirst()
+                .ifPresent(System.out::print);
+        System.out.println();
+
+        /**
+         * Example 5: Stream from Array, sort, filter
+         */
+
+        String[] names = {"Bruce", "Tony" , "Banner", "Sebastian", "Bertha"};
+        Arrays.stream(names)
+                .filter(s -> s.startsWith("B"))
+                .sorted()
+                .forEach(System.out::println);
+
+        /**
+         * Example 6: Average of squares of an int array
+         */
+        Arrays.stream(new int[] {2, 4, 6, 8, 10})
+                .map(x -> x*x)
+                .average()
+                .ifPresent(System.out::print);
+        System.out.println();
+
+        /**
+         * Example 7: Stream from List, filter and print
+         */
+        List<String> people = Arrays.asList("Bruce", "Tony" , "Banner", "Sebastian", "Bertha", "Spyder");
+        people
+            .stream()
+            .map(String::toUpperCase)
+            .filter(x -> x.startsWith("S"))
+            .forEach(System.out::println);
 
     }
 }
